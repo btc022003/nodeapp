@@ -9,6 +9,12 @@ const express = require('express'),
 ////top level function
 const app = express();
 
+
+/**
+ * art-template的配置部分
+ * https://github.com/aui/artTemplate
+ */
+///***********art-template start
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 //——————————————start
@@ -18,6 +24,8 @@ template.config('base','');
 template.config('extname', '.html');
 app.engine('.html', template.__express);
 app.set('view engine', 'html');
+///***********art-template end
+
 
 
 // 处理静态页面文件 文件目录为www
