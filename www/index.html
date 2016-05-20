@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Node Express App</title>
+</head>
+<body>
+	<h1>hello express!</h1>
+
+	<form action="/api/user/signin" method="post">
+		<input type="text" name="user_name" placeholder="请输入用户名" required /><br>
+		<input type="password" name="user_pwd" placeholder="请输入密码" required pattern=".{6,16}"/><br>
+		<input type="submit" value="登录">
+	</form>
+
+	<script type="text/javascript" src='jquery.min.js'></script>
+	<script type="text/javascript" src='index.js'></script>
+</body>
+</html>
