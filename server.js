@@ -31,6 +31,10 @@ app.set('view engine', 'html');
 // 处理静态页面文件 文件目录为www
 app.use(express.static('www'));
 
+
+// 设置public目录做静态文件处理
+app.use(express.static('public'));
+
 // 引入body-parse模块 处理post的数据
 app.use(bodyParser.urlencoded({extended:true}));
 
