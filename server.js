@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 // 引入模块文件 把登录处理文件放在./routes/api/signin.js文件中
 app.use('/api/user',require('./routes/api/signin'))
 
+app.use('/api/user',require('./routes/api/register'))
+
 // 处理post请求
 // app.post('/api/user/signin',(req,res)=>{
 // 	console.log(req.body);
